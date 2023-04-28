@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Carrinho de compras</h1>
+
+    <h2>selecione o item abaixo para adicionar ao carrinho</h2>
+
+    <label for="produtos">Produtos</label>
+    <select id="produtos" name="produtos">
+        <option value="camiseta">camiseta</option>
+        <option value="calça">calça</option>
+        <option value="sapato">sapato</option>
+        <option value="jaqueta">jaqueta</option>
+        <option value="boné">boné</option>
+    </select>
+
+    <input id="unidades" type="number" placeholder="quantas unidades voce quer comprar?" min="1" max="10">
+
+    <button id="buttonAdiciona" onclick="adicionarAoCarrinho()">Adicionar Produto</button>
+
+    <br>
+
+    
+
+    <h2>selecione o item abaixo para ver a quantidade total adicionada ao carrinho</h2>
+
+    <label for="produtos">Produtos</label>
+    <select id="produtostotal" name="produtos">
+        <option value="camiseta">camiseta</option>
+        <option value="calça">calça</option>
+        <option value="sapato">sapato</option>
+        <option value="jaqueta">jaqueta</option>
+        <option value="boné">boné</option>
+    </select>
+
+    <button id="buttonTotal" onclick="calcularValor()">Verificar o total de produtos</button>
+
+    <!-- <button id="buttonNotasDadas" onclick="NotasDadas()">Notas dadas para esse filme</button> -->
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
